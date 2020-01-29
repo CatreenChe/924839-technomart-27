@@ -6,28 +6,21 @@
   <title>Интрернет-магазин Техномарт</title>
   <link href="css/normalize.css" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <nav>
-      <a href="index.html">ТЕХНОМАРТ</a>
-      <!--нужна ли тут еще одна ссылка на главную страницу ? Или это просто надпись? -->
+      <a><img src="img/logo.svg" alt="Логотип Техномарт" width="109" height="19"></a>
       <ul>
-        <!--иконки в ::before к li-->
-        <li>Поиск</li>
-        <li>Закладки</li>
-        <li>Корзина</li>
-        <li>Оформить заказ</li>
-        <li>Новости</li>
+        <li>
+          <!--Место под форму-->Поиск</li>
+        <li><a href="#">Закладки</a></li>
+        <li><a href="#">Корзина</a></li>
+        <li><a href="#">Оформить заказ</a></li>
       </ul>
       <div>
-        <!--или section? h2-H6 не ставят до h1?-->
         <p>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
         </p>
-        <div>
-          <!--иконка телефона в ::before (внутри p?)-->
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
       </div>
@@ -50,7 +43,6 @@
       </ul>
     </nav>
   </header>
-
   <main>
     <h1>Интернет-магазин Техномарт</h1>
     <section>
@@ -66,23 +58,20 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a href="company.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
+      <a href="company.html">Подробнее о компании</a>
     </section>
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-      <div>
-        <img src="img/map.jpg"  width="300" height="158" alt="карта с адресом">
-      </div>
-      <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
-      <!--отдельная страница, форма или онлайн-чат?-->
+      <a href="#">
+        <img src="img/map.png" width="300" height="158" alt="карта с адресом"></a>
+      <button type="submit">Заблудились? Напишите нам!</button>
     </section>
   </main>
   <footer>
     <section>
       <h2>Навигация по сайту</h2>
-      <a href="index.html">ТЕХНОМАРТ</a>
-      <!--стр. 13 -->
+      <a><img src="img/logo.svg" alt="Логотип Техномарт" width="138" height="23"></a>
       <ul>
         <li><a href="company.html">Компания</a></li>
         <li><a href="news.html">Новости</a></li>
@@ -96,13 +85,12 @@
         <li><a href="catalog.html">Инструменты</a></li>
         <li><a href="delivery.html">Спецпредложения</a></li>
       </ul>
-      <!--или сделать все одним списком, добавить класс к Материалам - Спец.предлож.и настраивать уже стили?-->
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </p>
     </section>
     <section>
       <h2>Обратная связь</h2>
-      <p>© 2010–2019 Компания <a href="company.html">«Техномарт»</a><br> Все права защищены</p>
+      <p>© 2010–2019 Компания <a href="#">«Техномарт»</a><br> Все права защищены</p>
       <ul>
         <li><a class="social-button vk" href="http://vk.com">Vkontakte</a></li>
         <li><a class="social-button fb" href="http://fb.com">Facebook</a></li>
