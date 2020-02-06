@@ -151,18 +151,33 @@
     <button type="button">Закрыть</button>
   </section>
 
-  <section> <!--тут ведь должна быть не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
+  <section>
+    <!--тут ведь должна быть не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
     <h2 class="visually-hidden">Корзина с покупками</h2>
-    
-      <p>Товар добавлен в корзину!</p>
-      <button type="submit">Оформить заказ</button>
-      <a href="catalog.html">Продолжить покупки</a>
-      <button type="button">Закрыть</button>
-      </form>
+
+    <p>Товар добавлен в корзину!</p>
+    <button type="submit">Оформить заказ</button>
+    <a href="catalog.html">Продолжить покупки</a>
+    <button type="button">Закрыть</button>
+    </form>
   </section>
 
+
   <section>
-    <h2 class="visually-hidden">Личный кабинет</h2>
+    <!--вот тут совсем не поняла, нужно ли делать и как она должна выглядеть?-->
+    <h2 class="visually-hidden">Форма входа</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>Логин:
+        <label for="user-name"></label>
+        <input name="name" id="user-name" value="" placeholder="Равшан Джамшутович" required>
+      </p>
+      <p>Пароль:
+        <label for="user-password"></label>
+        <input type="password" name="password" id="user-password" value="звездочки"required>
+      </p>
+      <button type="submit">Войти</button>
+      <button type="button">Закрыть</button>
+    </form>
 
   </section>
 
