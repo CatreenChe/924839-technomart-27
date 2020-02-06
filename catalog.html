@@ -48,47 +48,91 @@
     </nav>
   </header>
   <main>
+    >
+    <h1>Перфораторы</h1>
     <div>
-      <h1>Перфораторы</h1>
-      <div>
-        <h2 class="visually-hidden">Навигация по товарам</h2>
-        <ul>
-          <li><a href="#">Домик</a></li>
-          <!--вектор-->
-          <li><a href="catalig.html">Каталог</a></li>
-          <li><a href="tool.html">Инструменты</a></li>
-          <li><a href="#">Перфораторы</a></li>
-        </ul>
-      </div>
-      <section class="filter">
-        <h2>Фильтры</h2>
-        <div>
-          <h3>Цена</h3>
-        </div>
-        <div>
-          <h3>Сортировка</h3>
-        </div>
-        <div>
-          <h3>Производители</h3>
-          <ul>
-            <li>BOSCH</li>
-            <li>ИНТЕРСКОЛ </li>
-            <li>MAKIta</li>
-            <li>Dewalt</li>
-            <li>Hitachi</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Питание</h3>
-          <ul>
-            <li>Аккумуляторные</li>
-            <li>Сетевые </li>
-          </ul>
-        </div>
-        <button>Показать</button>
-      </section>
-      <!--потом кнопку прикрутить к форме-->
+      <h2 class="visually-hidden">Навигация по товарам</h2>
+      <ul>
+        <li><a href="#">Домик</a></li>
+        <!--вектор-->
+        <li><a href="catalig.html">Каталог</a></li>
+        <li><a href="tool.html">Инструменты</a></li>
+        <li><a href="#">Перфораторы</a></li>
+      </ul>
     </div>
+
+    <section class="filter">
+      <h2>Фильтры</h2>
+      
+      <div>
+        <fieldset class="filter-form-item">
+          <legend class="filter-form-title">Цена:</legend>
+         
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset class="filter-form-item">
+          <legend class="filter-form-title">Cортировка:</legend>
+          <label>
+            <input type="radio" name="0" value="price" checked><span>по цене</span><!--не отображается =(-->
+          </label>
+          <label>
+            <input type="radio" name="0" value="type"><span>по типу</span>
+          </label>
+          <label>
+            <input type="radio" name="0" value="functional"><span>по функционалу</span>
+          </label>
+          </fieldset>
+        <fieldset class="filter-form-item">
+          <label>
+          <input type="radio" name="0" value="up" checked><span>вверх</span>
+          </label>
+          <label>
+            <input type="radio" name="0" value="down"><span>вниз</span>
+          </label>
+        </fieldset>
+      </div>
+
+
+      <div>
+        <fieldset class="filter-form-item">
+          <legend class="filter-form-title">Производители</legend>
+          <label class="filter-checkbox-control">
+            <input type="checkbox" checked>
+            <span>BOSCH</span>
+          </label>
+          <label class="filter-checkbox-control">
+            <input type="checkbox"><span>ИНТЕРСКОЛ</span>
+          </label>
+          <label class="filter-checkbox-control">
+            <input type="checkbox" checked>
+            <span>MAKIta</span>
+          </label>
+          <label class="filter-checkbox-control">
+            <input type="checkbox"><span>Dewalt</span>
+          </label>
+          <label class="filter-checkbox-control">
+            <input type="checkbox"><span>Hitachi</span>
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset class="filter-form-item">
+          <legend class="filter-form-title">Питание</legend>
+          <label>
+            <input type="radio" name="power" value="accumulator" checked><span>Аккумуляторные</span>
+          </label>
+          <label>
+            <input type="radio" name="power" value="electricity"><span>Сетевые</span>
+          </label>
+        </fieldset>
+      </div>
+
+      <button type="submit">Показать</button>
+    </section>
+
 
     <section>
       <h2 class="visually-hidden">Карточки товаров</h2>
