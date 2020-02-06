@@ -113,43 +113,57 @@
 
   <div>
     <h3>Доставка</h3>
-    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-   <img src="img/delivery.png" width="468" height="261" alt="картинка с грузовиком">>
+    <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо
+      заработаем,<br> поднимая его на ваш этаж!</p>
+    <img src="img/delivery.png" width="468" height="261" alt="картинка с грузовиком">>
   </div>
   <div>
     <h3>Гарантия</h3>
-    <p>Если купленный у нас товар поломается или заискрит,а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-   <img src="img/medal.png" width="398" height="283" alt="картинка с медалью">>
+    <p>Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его
+      возгоранием,<br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br> сгоревший товар на новый.<br>Дом
+      уж восстановите как-нибудь сами.</p>
+    <img src="img/medal.png" width="398" height="283" alt="картинка с медалью">
   </div>
   <div>
     <h3>Кредит</h3>
     <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-   <img src="img/money.png" width="465" height="285" alt="картинка с деньгами">
+    <img src="img/money.png" width="465" height="285" alt="картинка с деньгами">
+    <button type="submit">Отправить заявку</button>
   </div>
 
-    <!--ФОРМЫ-->
-    <section>
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>Ваше имя:
-          <label for="user-name"></label>
-          <input name="name" id="user-name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p>Ваш e-mail:
-          <label for="user-email"></label>
-          <input name="email" id="user-email" value="" placeholder="email@example.com">
-        </p>
-        <p>Текст письма:
-          <textarea rows="5" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
+  <!--ФОРМЫ-->
+  <section>
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>Ваше имя:
+        <label for="user-name"></label>
+        <input name="name" id="user-name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p>Ваш e-mail:
+        <label for="user-email"></label>
+        <input name="email" id="user-email" value="" placeholder="email@example.com">
+      </p>
+      <p>Текст письма:
+        <textarea rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button">Закрыть</button>
+  </section>
+
+  <section> <!--тут ведь должна быть не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
+    <h2 class="visually-hidden">Корзина с покупками</h2>
+    
+      <p>Товар добавлен в корзину!</p>
+      <button type="submit">Оформить заказ</button>
+      <a href="catalog.html">Продолжить покупки</a>
       <button type="button">Закрыть</button>
-    </section>
-  
-    <section>
-      <h2 class="visually-hidden">Личный кабинет</h2>
-  
-    </section>
+      </form>
+  </section>
+
+  <section>
+    <h2 class="visually-hidden">Личный кабинет</h2>
+
+  </section>
 
 </body>
