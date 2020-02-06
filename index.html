@@ -12,9 +12,10 @@
 
     <div>
       <a><img src="img/logo.svg" alt="Логотип Техномарт" width="109" height="19"></a>
-      <form>
-        <!--Тут будет форма поиска по сайту-->
-        <p>Поиск</p>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <p>Поиск:</p>
+        <label for="search"></label>
+        <input type="search" name="search-catalog" id="search">
       </form>
       <a href="#">Закладки</a>
       <a href="#">Корзина</a>
@@ -29,7 +30,8 @@
 
     <div>
       <button type="submit">Войти</button>
-      <button type="submit">Регистрация</button>
+      <a href="#">Регистрация</a> 
+      <!--ссылки или отправка данных? По идеи, "Регистрация" и "Войти" перекидывают в новое окно, из которого уже нужно отправлять данные на сервер. Или должна появиться форма в этом же окне?-->
     </div>
     <nav>
       <a href="index.html">Главная</a>
@@ -97,7 +99,7 @@
       </p>
     </section>
     <section>
-      <h2>Обратная связь</h2>
+      <h2 class="visually-hidden">Обратная связь</h2>
       <p>© 2010–2019 Компания <a href="#">«Техномарт»</a><br> Все права защищены</p>
       <ul>
         <li><a class="social-button vk" href="http://vk.com">Vkontakte</a></li>
@@ -132,6 +134,11 @@
   </div>
 
   <!--ФОРМЫ-->
+  <div>
+  <section>
+    <h2 class="visually-hidden">Подробная карта</h2>
+    <img src="img/map.png" alt="местоположение на карте магазина: Санкт-Петербург, Большая Конюшенная, дом 19">
+  </section>
   <section>
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
@@ -150,15 +157,8 @@
     </form>
     <button type="button">Закрыть</button>
   </section>
+</div>
 
-  <section>
-    <!--не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
-    <h2 class="visually-hidden">Корзина с покупками</h2>
-    <p>Товар добавлен в корзину!</p>
-    <button type="submit">Оформить заказ</button>
-    <a href="catalog.html">Продолжить покупки</a>
-    <button type="button">Закрыть</button>
-  </section>
 
 
   <section>
