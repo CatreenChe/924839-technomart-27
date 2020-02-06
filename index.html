@@ -110,7 +110,7 @@
   </footer>
 
 
-
+  <!--Выпадающий список?-->
   <div>
     <h3>Доставка</h3>
     <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br> Ведь мы неплохо
@@ -152,9 +152,8 @@
   </section>
 
   <section>
-    <!--тут ведь должна быть не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
+    <!--не форма? она по факту пустая. Данные из корзины на сервер отправлять не нужно?-->
     <h2 class="visually-hidden">Корзина с покупками</h2>
-
     <p>Товар добавлен в корзину!</p>
     <button type="submit">Оформить заказ</button>
     <a href="catalog.html">Продолжить покупки</a>
@@ -165,16 +164,19 @@
 
   <section>
     <!--вот тут совсем не поняла, нужно ли делать и как она должна выглядеть?-->
-    <h2 class="visually-hidden">Форма входа</h2>
+    <h2 class="visually-hidden">Вход в личный кабинет</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>Логин:
-        <label for="user-name"></label>
-        <input name="name" id="user-name" value="" placeholder="Равшан Джамшутович" required>
+        <label for="login"></label>
+        <input name="user-name" id="login" value="" placeholder="Равшан Джамшутович" required>
       </p>
       <p>Пароль:
         <label for="user-password"></label>
-        <input type="password" name="password" id="user-password" value="звездочки"required>
+        <input type="password" name="password" id="user-password" value="звездочки" required>
       </p>
+      <label for="login-password-info"> Запомните меня
+      <input type="checkbox" name="remember"></label>
+      <a href="#">Я забыл пароль!</a>
       <button type="submit">Войти</button>
       <button type="button">Закрыть</button>
     </form>
