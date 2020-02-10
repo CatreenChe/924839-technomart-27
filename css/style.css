@@ -1,0 +1,52 @@
+body {
+margin:130px;
+font-family: "PTsans", sans-serif;
+font-size: 13px;
+line-height: 24;
+font-weight: normal;
+color: #000000;
+background-color:pink;
+  }
+  
+ a{
+ text-decoration: none;
+ font-size: 17px;
+line-height: 17px;
+color: #ffffff;
+font-family: "Cuprum"; Arial, sans-serif;
+padding-top: 22px;
+padding-bottom: 26px;
+}
+
+p {
+  color: blueviolet;
+}
+
+h3 {
+  color: blueviolet;
+}
+.nav-up,
+.main-nav-up,
+.main-nav-down {
+background-color:#32425c;
+}
+
+.feedback-down {
+background-color:#293449;
+}
+
+.header-nav {
+ background-color: #f4f7f9;
+}
+
+/*.info-panel-description {
+color:#ee3643;
+}
+
+.info-panel-contacts {
+color:#32425c;
+}
+
+.info-panel-contacts {
+color:#000000;
+ 
