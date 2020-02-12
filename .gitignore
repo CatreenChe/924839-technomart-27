@@ -9,4 +9,7 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
 *.code-workspace
+макет/
+архивы zeplin/
