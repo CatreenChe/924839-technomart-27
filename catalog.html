@@ -61,11 +61,11 @@
 
     <section class="filter">
       <h2>Фильтры</h2>
-      <fieldset class="filter-form-item">
-        <legend class="filter-form-title">Цена:</legend>
-      </fieldset>
+      <form class="filter-form" action="/" method="get">
 
-      <div class="filter">
+        <fieldset class="filter-form-item">
+          <legend class="filter-form-title">Цена:</legend>
+        </fieldset>
         <fieldset class="filter-form-item">
           <legend class="filter-form-title">Производители</legend>
           <label class="filter-checkbox-control" for="filter-bosch">
@@ -86,9 +86,6 @@
             <input type="checkbox" id="filter-hitachi">Hitachi
           </label>
         </fieldset>
-      </div>
-
-      <div class="filter">
         <fieldset class="filter-form-item">
           <legend class="filter-form-title">Питание</legend>
           <label>
@@ -98,9 +95,8 @@
             <input type="radio" name="power" value="electricity"><span>Сетевые</span>
           </label>
         </fieldset>
-      </div>
-
-      <button type="submit">Показать</button>
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
 

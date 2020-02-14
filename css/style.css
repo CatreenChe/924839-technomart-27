@@ -1,22 +1,84 @@
 body {
-  margin: 130px;
   font-family: "PTSans", sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: #000000;
-  border-color: pink;
+  border: 2px solid green;
 }
 
 a {
   text-decoration: none;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
-  color: rgb(0, 78, 194);
-  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+}
+
+header {
+  width: 100%;
+  background-color: #f4f7f9;
+}
+
+.main-nav {
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #32425c;
   padding-top: 22px;
   padding-bottom: 26px;
 }
+
+.main-nav a {
+  padding-top: 22px;
+  padding-bottom: 26px;
+  border: 1px solid red;
+}
+
+.nav-assortments {
+  width: 100%;
+  background-color: #32425c;
+}
+
+.popular {
+  height: 89px;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #f9f5f0;
+}
+
+.feedback,
+.header-nav {
+  width: 100%;
+  background-color: #293449;
+}
+
+.main-item {
+  width: 300px;
+  height: 123px;
+  background-color: purple;
+  background-image: url(../img/paint.svg);
+  background-repeat: no-repeat;
+}
+
+.headings-main-sections {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fffff;
+}
+
+
+/* Кнопки */
+
+.button {
+  text-align: center;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background-color: #ee3643;
+}
+
+
+/*Шрифты*/
 
 @font-face {
   font-family: 'Cuprum';
