@@ -1,250 +1,276 @@
-/*___________Важное изменение_________*/
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-
-/*___________Основные__________ */
-
-body {
-  font-family: "PTSans", sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #000000;
-  border: 2px solid green;
-}
-
-a {
-  font-family: "Cuprum", Arial, sans-serif;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 17px;
-  line-height: 17px;
-  color: #ffffff;
-}
-
-header {
-  width: 100%;
-  background-color: #f4f7f9;
-}
-
-
-/*_____________Главная навигация______________________ */
-
-.main-nav {
-  margin-left: 130px;
-  margin-right: 130px;
-  background-color: #32425c;
-  padding-top: 26px;
-  padding-bottom: 22px;
-  border: 4px solid gold;
-  border-bottom: 4px solid #32425c;
-}
-
-.main-nav a {
-  margin-right: 30px;
-  margin-left: 30px;
-  border: 0.1px solid red;
-}
-
-.main-nav a:first-child {
-  margin-left: 52px;
-}
-
-.main-nav a:last-child {
-  padding-right: 0px;
-  margin-right: 55px;
-}
-
-
-/*  */
-
-.nav-assortments {
-  width: 100%;
-  background-color: #32425c;
-}
-
-.nav-assortments li {
-  display: inline-block;
-}
-
-.popular {
-  height: 89px;
-  margin-left: 130px;
-  margin-right: 130px;
-  background-color: #f9f5f0;
-}
-
-.main-item {
-  width: 300px;
-  height: 123px;
-  display: inline-block;
-  background-color: purple;
-  background-image: url(../img/paint.svg);
-  background-repeat: no-repeat;
-}
-
-.slide-slide2 {
-  display: none;
-}
-
-.headings-main-sections {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  color: #fffff;
-}
-
-
-/*________Футер_____________________ */
-
-.feedback,
-.header-nav {
-  width: 100%;
-  background-color: #293449;
-}
-
-.feedback li {
-  display: inline-block;
-}
-
-
-/*______________Кнопки_______________ */
-
-.button {
-  text-transform: uppercase;
-  text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  background-color: #ee3643;
-}
-
-.new-price {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  max-width: 140px;
-  /* заменить max-width: */
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 36px;
-  padding-right: 40px;
-  color: #ffffff;
-  background-color: #ee3643;
-  /* заострить */
-}
-
-.old-price {
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: line-through;
-  font-size: 12px;
-  /* уточнить размеры */
-  padding-left: 36px;
-  color: #999999;
-  border: 1px solid blue;
-}
-
-.action-item a {
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 18px;
-  /* а на макете высота строк и шрифта разная... */
-}
-
-.action-buy {
-  color: #ffffff;
-  text-align: center;
-  background-color: #63a63e;
-  border-bottom: 3px solid #367315;
-  background-image: url(../img/icon-basket.svg);
-  background-repeat: no-repeat;
-}
-
-.action-bookmark {
-  color: #32425c;
-  border: 3px solid #63a63e;
-  /* скруглить углы рамки */
-}
-
-
-/*___________________________________  */
-
-.production {
-  display: inline-block;
-  width: 220px;
-  /* нельзя тут задавать ширину */
-  text-align: center;
-  border: 1px solid green;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.production-name h3 {
-  color: #000000;
-  font-weight: bold;
-  font-size: 18px;
-  /* уточнить размеры */
-  line-height: 20px;
-}
-
-.production span {
-  display: block;
-}
-
-. img {
-  border: 3px solid royalblue;
-}
-
-
-/*___________ШРИФТЫ_________________________*/
-
-@font-face {
-  font-family: 'Cuprum';
-  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumItalic';
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumBold';
-  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumBoldItalic';
-  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTSans';
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTSansBold';
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+    /*___________Важное изменение_________*/
+    
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+    /*___________Основные__________ */
+    
+    body {
+      font-family: "PTSans", sans-serif;
+      font-size: 13px;
+      line-height: 24px;
+      font-weight: normal;
+      color: #000000;
+      border: 2px solid green;
+    }
+    
+    a {
+      font-family: "Cuprum", Arial, sans-serif;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      line-height: 17px;
+      color: #ffffff;
+    }
+    
+    header {
+      width: 100%;
+      background-color: #f4f7f9;
+    }
+    /*_____________Главная навигация______________________ */
+    
+    .main-nav {
+      margin-left: 130px;
+      margin-right: 130px;
+      background-color: #32425c;
+      padding-top: 26px;
+      padding-bottom: 22px;
+      border: 4px solid gold;
+      border-bottom: 4px solid #32425c;
+    }
+    
+    .main-nav a {
+      margin-right: 30px;
+      margin-left: 30px;
+      border: 0.1px solid red;
+    }
+    
+    .main-nav a:first-child {
+      margin-left: 52px;
+    }
+    
+    .main-nav a:last-child {
+      padding-right: 0px;
+      margin-right: 55px;
+    }
+    
+    h1 {
+      font-family: "CuprumItalic", Arial, sans-serif;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 23px;
+      color: #ee3643;
+    }
+    
+    .сontact-us {
+      font-family: "Cuprum", Arial, sans-serif;
+      color: #32425c;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    
+    .сontact-us a {
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 21px;
+      padding-top: 13px;
+      padding-bottom: 11px;
+      padding-right: 52px;
+      padding-left: 74px;
+      border: 3px solid #ffffff;
+      color: #ee3643;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+    }
+    
+    .user-block a {
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 15px;
+      color: #000000;
+      background-color: #f4f7f9;
+      border: 3px solid #ffffff;
+    }
+    
+    .user-action:first-child {
+      background-image: url(../img/icon-entrance.svg);
+      background-repeat: no-repeat;
+    }
+    /*  */
+    
+    .popular {
+      height: 89px;
+      margin-left: 130px;
+      margin-right: 130px;
+      background-color: #f9f5f0;
+    }
+    
+    .main-item {
+      width: 300px;
+      height: 123px;
+      display: inline-block;
+      background-color: purple;
+      background-image: url(../img/paint.svg);
+      background-repeat: no-repeat;
+    }
+    
+    .slide-slide2 {
+      display: none;
+    }
+    
+    .headings-main-sections {
+      font-family: "Cuprum", Arial, sans-serif;
+      font-weight: bold;
+      font-size: 22px;
+      color: #fffff;
+    }
+    /*________Футер_____________________ */
+    
+    .nav-assortments {
+      width: 100%;
+      background-color: #32425c;
+    }
+    
+    .nav-assortments li {
+      display: inline-block;
+    }
+    
+    .feedback,
+    .header-nav {
+      width: auto;
+      background-color: #293449;
+    }
+    
+    .feedback li {
+      display: inline-block;
+    }
+    /*______________Кнопки_______________ */
+    
+    .button {
+      text-transform: uppercase;
+      text-align: center;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      background-color: #ee3643;
+    }
+    
+    .new-price {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 12px;
+      /* уточнить размеры */
+      padding-top: 13px;
+      padding-bottom: 13px;
+      padding-left: 36px;
+      padding-right: 40px;
+      color: #ffffff;
+      background-color: #ee3643;
+      /* заострить */
+    }
+    
+    .old-price {
+      text-transform: uppercase;
+      font-weight: bold;
+      text-decoration: line-through;
+      font-size: 12px;
+      /* уточнить размеры */
+      padding-left: 36px;
+      color: #999999;
+      border: 1px solid blue;
+    }
+    
+    .action-item a {
+      text-transform: uppercase;
+      font-size: 10px;
+      line-height: 18px;
+      /* а на макете высота строк и шрифта разная... */
+    }
+    
+    .action-buy {
+      color: #ffffff;
+      text-align: center;
+      background-color: #63a63e;
+      border-bottom: 3px solid #367315;
+      background-image: url(../img/icon-basket.svg);
+      background-repeat: no-repeat;
+    }
+    
+    .action-bookmark {
+      color: #32425c;
+      border: 3px solid #63a63e;
+      /* скруглить углы рамки */
+    }
+    /*___________________________________  */
+    
+    .production {
+      display: inline-block;
+      width: 220px;
+      /* нельзя тут задавать ширину */
+      text-align: center;
+      border: 1px solid greenyellow;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    
+    .production-name h3 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 18px;
+      /* уточнить размеры */
+      line-height: 20px;
+    }
+    
+    .production span {
+      display: block;
+    }
+    
+    . img {
+      border: 3px solid royalblue;
+    }
+    /*___________ШРИФТЫ_________________________*/
+    
+    @font-face {
+      font-family: 'Cuprum';
+      src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'CuprumItalic';
+      src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'CuprumBold';
+      src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'CuprumBoldItalic';
+      src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'PTSans';
+      src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
+    
+    @font-face {
+      font-family: 'PTSansBold';
+      src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+      font-weight: normal;
+      font-style: normal;
+    }
