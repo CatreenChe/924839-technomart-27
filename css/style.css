@@ -44,7 +44,10 @@ header {
 .delivery-partners,
 .service-controls,
 .nav-sections,
-.feedback li {
+.feedback li,
+.breadcrumbs-item,
+.filter-controls,
+.catalog-pages {
   list-style: none;
 }
 
@@ -157,6 +160,14 @@ header {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.main-item .category-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-item .category-button:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .main-item .headings-main-sections {
   font-family: "CuprumBold", Arial, sans-serif;
   font-size: 24px;
@@ -201,6 +212,14 @@ header {
   margin-right: 30px;
   margin-left: 30px;
   border: 0.1px solid red;
+}
+
+.main-nav a:hover {
+  background-color: #293449;
+}
+
+.main-nav a:focus {
+  background-color: #1d2739;
 }
 
 .main-nav a:first-child {
@@ -365,8 +384,39 @@ h1 {
   font-weight: normal;
 }
 
-.delivery-partner a {
+.breadcrumbs-item a {
   color: #000000;
+  text-decoration: u;
+}
+
+
+/* КАТАЛОГ */
+
+.breadcrumbs-item li {
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.catalog-pages a {
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-pages a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.catalog-pages a:focus {
+  border: 1px solid #ee3643;
+  /* не срабатывает. Почему? тоже показывает background-color: #ee3643; */
+}
+
+.catalog-pages a:active {
+  background-color: #ee3643;
 }
 
 
@@ -477,9 +527,10 @@ h1 {
 
 .new-price {
   text-transform: uppercase;
+  font-family: "PTSans;", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
-  font-size: 12px;
-  /* уточнить размеры */
   color: #ffffff;
   background-color: #ee3643;
   /* заострить */
@@ -487,19 +538,20 @@ h1 {
 
 .old-price {
   text-transform: uppercase;
+  font-family: "PTSans;", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
   font-weight: bold;
   text-decoration: line-through;
-  font-size: 12px;
-  /* уточнить размеры */
   color: #999999;
   border: 1px solid blue;
 }
 
 .action-item a {
+  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 18px;
-  /* а на макете высота строк и шрифта разная... */
 }
 
 .action-buy {
@@ -507,14 +559,33 @@ h1 {
   text-align: center;
   background-color: #63a63e;
   border-bottom: 3px solid #367315;
+  border-radius: 2px;
   background-image: url(../img/icon-basket.svg);
   background-repeat: no-repeat;
+}
+
+.action-buy:hover {
+  background-color: #5fbb2d;
+  border-bottom: 3px solid #367315;
+}
+
+.action-buy:focus {
+  background-color: #518534;
 }
 
 .action-bookmark {
   color: #32425c;
   border: 3px solid #63a63e;
-  /* скруглить углы рамки */
+  border-radius: 2px;
+}
+
+.action-bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.action-bookmark:focus {
+  border: 3px solid #32425c;
+  opacity: 0.3;
 }
 
 
@@ -524,11 +595,18 @@ h1 {
   list-style: none;
 }
 
-.production {
+.production,
+.manufacturer {
   text-align: center;
-  border: 1px solid greenyellow;
-  margin-left: 10px;
-  margin-right: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.manufacturer:hover {
+  /* нужна тень */
+}
+
+.manufacturer:focus {
+  opacity: 0.5;
 }
 
 .production-name h3 {
@@ -537,10 +615,6 @@ h1 {
   font-size: 18px;
   /* уточнить размеры */
   line-height: 20px;
-}
-
-.img {
-  border: 3px solid royalblue;
 }
 
 
