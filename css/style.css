@@ -57,19 +57,10 @@ header {
 
 /* ________ХЕДЕР________ */
 
-.header-nav a {
-  padding-top: 13px;
-  padding-bottom: 14px;
-}
-
 .header-nav .logo {
-  background-image: url(../img/logo.svg);
-  background-repeat: no-repeat;
-  background-position: 0 50%;
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
-  /* color: #ffffff; На случай, если лого не подгрузится. Но лого все равно два получилось/
-   Лого в футере пропал */
+  color: #ffffff;
 }
 
 .header-nav a:first-child:hover {
@@ -86,26 +77,20 @@ header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
-  padding-left: 37px;
-  padding-right: 190px;
   color: #ffffff;
   background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
 }
 
-.header-nav a:nth-of-type(2) {
-  padding-left: 30px;
-  padding-right: 29px;
+.header-nav .bookmark {
   background-image: url(../img/icon-bookmark.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
   background-position: 0 50%;
 }
 
-.header-nav a:nth-of-type(3) {
-  padding-left: 35px;
-  padding-right: 26px;
+.header-nav .basket {
   background-image: url(../img/icon-basket.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
@@ -168,10 +153,8 @@ header {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 18px;
-  padding: 12px 14px 24px;
   color: #ffffff;
-  background-color: #000000;
-  opacity: 0.1;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .main-item .headings-main-sections {
@@ -188,8 +171,6 @@ header {
 /* ОФормить заказ */
 
 .header-nav a:last-of-type {
-  padding-left: 20px;
-  padding-right: 22px;
   background-color: #63a63e;
 }
 
@@ -212,8 +193,6 @@ header {
   margin-left: 130px;
   margin-right: 130px;
   background-color: #32425c;
-  padding-top: 26px;
-  padding-bottom: 22px;
   border: 4px solid gold;
   border-bottom: 4px solid #32425c;
 }
@@ -229,7 +208,6 @@ header {
 }
 
 .main-nav a:last-child {
-  padding-right: 0px;
   margin-right: 55px;
 }
 
@@ -252,10 +230,6 @@ h1 {
 .сontact-us a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  padding-right: 52px;
-  padding-left: 74px;
   border: 3px solid #ffffff;
   color: #ee3643;
   background-image: url(../img/icon-phone.svg);
@@ -296,32 +270,31 @@ h1 {
   font-weight: bold;
 }
 
-background-color: purple;
-background-image: url(../img/paint.svg);
-background-position: 80% 50%;
-background-repeat: no-repeat;
-
-}
 .slide-slide2 {
   display: none;
 }
+
 .headings-main-sections {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
 }
+
 .headings-main-sections h3 {
   color: #ffffff;
 }
+
 .serviсe {
   background-color: #f4f7f9;
 }
+
 .serviсe h2 {
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
 }
+
 .serviсe h3 {
   text-transform: uppercase;
   font-family: "Cuprum", Arial, sans-serif;
@@ -330,18 +303,22 @@ background-repeat: no-repeat;
   font-weight: normal;
   color: #32425c;
 }
+
 .delivery-slide1 {
   background-image: url(../img/delivery.png);
   background-repeat: no-repeat;
 }
+
 .delivery-slide2 {
   background-image: url(../img/medal.png);
   background-repeat: no-repeat;
 }
+
 .delivery-slide3 {
   background-image: url(../img/money.png);
   background-repeat: no-repeat;
 }
+
 .serviсe li {
   font-family: "CuprumBold", Arial, sans-serif;
   font-size: 21px;
@@ -349,100 +326,111 @@ background-repeat: no-repeat;
   color: #ffffff;
   background-color: #32425c;
 }
+
 .serviсe li:hover {
   color: #ffffff;
   background-color: #293449;
 }
+
 .serviсe li:active {
   color: #000000;
   background-color: #ffffff;
 }
+
 .serviсe-slide,
 .our-advantages,
 .contact-us {
   border: 2px solid blueviolet;
 }
+
 .guarantee-slide,
 .delivery-slide,
 .credit-slide {
   border: 1px dashed pink;
 }
 
-}
 .our-advantages h2,
 .contact-us h2 {
-  font-family: "Cuprum",
-  Arial,
-  sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
 }
+
 .delivery-partner {
-  font-family: "Cuprum",
-  Arial,
-  sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: normal;
 }
+
 .delivery-partner a {
   color: #000000;
 }
 
+
 /*________ФУТЕР____________________ */
+
 .footer-nav,
 .nav-assortments {
   width: 100%;
   background-color: #32425c;
 }
+
 .footer-nav a,
 .nav-assortments a {
-  font-family:"Cuprum",
-  Arial,
-  sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  padding-left:;
   font-weight: normal;
   border: 1px solid red;
 }
+
+.footer-nav .logo {
+  background-color: #ee3643;
+  border-bottom: 3px solid #ca2c37;
+  color: #ffffff;
+}
+
 .nav-assortments a,
 .feedback-mail,
 .feedback-site {
   color: #ffd180;
 }
+
 .nav-section:hover,
 .nav-assortment:hover {
   text-decoration: underline;
 }
-.footer-nav a:focus,
+
+.nav-sections a:focus,
 .nav-assortments a:focus {
   opacity: 0.5;
 }
+
 .feedback-mail:hover,
 .feedback-site:hover {
   text-decoration: underline;
 }
+
 .feedback-mail:focus,
 .feedback-site:focus {
   color: #ee3643;
-  opacity: none;
-  /* все равно становится бледнее */
 }
+
 .feedback li,
 .contact-info {
-  font-family: "Cuprum",
-  Arial,
-  sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color:#ffffff;
+  color: #ffffff;
 }
 
+
 /*________СОЦ.СЕТИ_____________________ */
+
 .social-button {
   height: 42px;
   width: 42px;
@@ -450,72 +438,70 @@ background-repeat: no-repeat;
   background-color: #212a3a;
 }
 
-/* .social-button { 
-  content: "";
+.social-button-block a {
   font-size: 0;
-  line-height: 0;
-  не получилось отключить текст*/
-
 }
+
 .vk {
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  /* куда пропала иконка ВК? */
 }
+
 .fb {
   background-image: url(../img/icon-fb.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .instagram {
   background-image: url(../img/icon-insta.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
   text-decoration: none;
 }
 
+
 /*______________КНОПКИ_______________ */
+
 .button {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 13px;
-  padding-bottom: 13px;
   background-color: #ee3643;
 }
+
 .new-price {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
   /* уточнить размеры */
-  padding-top: 13px;
-  padding-bottom: 13px;
-  padding-left: 36px;
-  padding-right: 40px;
   color: #ffffff;
   background-color: #ee3643;
   /* заострить */
 }
+
 .old-price {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: line-through;
   font-size: 12px;
   /* уточнить размеры */
-  padding-left: 36px;
   color: #999999;
   border: 1px solid blue;
 }
+
 .action-item a {
   text-transform: uppercase;
   font-size: 10px;
   line-height: 18px;
   /* а на макете высота строк и шрифта разная... */
 }
+
 .action-buy {
   color: #ffffff;
   text-align: center;
@@ -524,22 +510,27 @@ background-repeat: no-repeat;
   background-image: url(../img/icon-basket.svg);
   background-repeat: no-repeat;
 }
+
 .action-bookmark {
   color: #32425c;
   border: 3px solid #63a63e;
   /* скруглить углы рамки */
 }
 
+
 /*___________________________________  */
+
 .production-list li {
   list-style: none;
 }
+
 .production {
   text-align: center;
   border: 1px solid greenyellow;
   margin-left: 10px;
   margin-right: 10px;
 }
+
 .production-name h3 {
   color: #000000;
   font-weight: bold;
@@ -547,50 +538,52 @@ background-repeat: no-repeat;
   /* уточнить размеры */
   line-height: 20px;
 }
+
 .img {
   border: 3px solid royalblue;
 }
 
+
 /*___________ШРИФТЫ_________________________*/
+
 @font-face {
   font-family: 'Cuprum';
-  src: url("../fonts/cuprum.woff2") format("woff2"),
-  url("../fonts/cuprum.woff") format("woff");
+  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'CuprumItalic';
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-  url("../fonts/cuprumitalic.woff") format("woff");
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'CuprumBold';
-  src: url("../fonts/cuprumbold.woff2") format("woff2"),
-  url("../fonts/cuprumbold.woff") format("woff");
+  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'CuprumBoldItalic';
-  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"),
-  url("../fonts/cuprumbolditalic.woff") format("woff");
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'PTSans';
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-  url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'PTSansBold';
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-  url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
