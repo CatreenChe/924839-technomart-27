@@ -1,6 +1,5 @@
     /*___________Важное изменение_________*/
-    
-    *,
+    /* 
     *::before,
     *::after {
       box-sizing: inherit;
@@ -9,6 +8,7 @@
     html {
       box-sizing: border-box;
     }
+    */
     /*___________Основные__________ */
     
     body {
@@ -34,6 +34,97 @@
       background-color: #f4f7f9;
     }
     /*_____________Главная навигация______________________ */
+    
+    .feedback,
+    .header-nav {
+      width: auto;
+      background-color: #293449;
+    }
+    
+    .header-nav a {
+      padding-top: 13px;
+      padding-bottom: 14px;
+    }
+    
+    .header-nav a:first-child {
+      background-image: url(../img/logo.svg);
+      background-repeat: no-repeat;
+      /* color: #ffffff; На случай, если лого не подгрузится. Но лого все равно два получилось */
+      background-color: #ee3643;
+      border-bottom: 3px solid #ca2c37;
+    }
+    
+    .header-nav a:first-child:hover {
+      background-color: #ca2c37;
+      border-bottom: 3px solid #9a212a;
+    }
+    
+    .header-nav a:first-child:focus {
+      background-color: #ba2732;
+      border-bottom: 3px solid #8e1e26;
+    }
+    
+    .button-search {
+      font-family: "Cuprum", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 18px;
+      padding-left: 37px;
+      padding-right: 190px;
+      color: #ffffff;
+      background-image: url(../img/icon-search.svg);
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+    
+    .header-nav a:nth-of-type(2) {
+      padding-left: 30px;
+      padding-right: 29px;
+      background-image: url(../img/icon-bookmark.svg);
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+    
+    .header-nav a:nth-of-type(3) {
+      padding-left: 35px;
+      padding-right: 26px;
+      background-image: url(../img/icon-basket.svg);
+      background-repeat: no-repeat;
+      opacity: 0.7;
+    }
+    
+    .button-search:hover,
+    .header-nav a:not(:first-child):hover {
+      opacity: 1;
+    }
+    
+    .button-search:active {
+      color: #000000;
+      background-color: #ffffff;
+    }
+    
+    .header-nav a::not(:first-child):focus {
+      background-color: #161d29;
+    }
+    /* ОФормить заказ */
+    
+    .header-nav a:last-of-type {
+      padding-left: 20px;
+      padding-right: 22px;
+      background-color: #63a63e;
+    }
+    
+    .header-nav a:last-of-type:hover {
+      background-color: #5fbb2d;
+    }
+    
+    .header-nav a:last-of-type:focus {
+      background-color: #518534;
+    }
+    
+    .header-nav a:focus {
+      background-color: #161d29;
+    }
+    /* ____________________________________ */
     
     .main-nav {
       margin-left: 130px;
@@ -70,6 +161,7 @@
     
     .сontact-us {
       font-family: "Cuprum", Arial, sans-serif;
+      list-style: none;
       color: #32425c;
       font-size: 14px;
       line-height: 24px;
@@ -112,7 +204,6 @@
     .main-item {
       width: 300px;
       height: 123px;
-      display: inline-block;
       background-color: purple;
       background-image: url(../img/paint.svg);
       background-repeat: no-repeat;
@@ -135,18 +226,8 @@
       background-color: #32425c;
     }
     
-    .nav-assortments li {
-      display: inline-block;
-    }
-    
-    .feedback,
-    .header-nav {
-      width: auto;
-      background-color: #293449;
-    }
-    
-    .feedback li {
-      display: inline-block;
+    .list-manufacturers {
+      list-style: none;
     }
     /*______________Кнопки_______________ */
     
@@ -207,9 +288,6 @@
     /*___________________________________  */
     
     .production {
-      display: inline-block;
-      width: 220px;
-      /* нельзя тут задавать ширину */
       text-align: center;
       border: 1px solid greenyellow;
       margin-left: 10px;
@@ -224,11 +302,7 @@
       line-height: 20px;
     }
     
-    .production span {
-      display: block;
-    }
-    
-    . img {
+    .img {
       border: 3px solid royalblue;
     }
     /*___________ШРИФТЫ_________________________*/
