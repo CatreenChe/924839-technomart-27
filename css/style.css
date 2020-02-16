@@ -61,13 +61,14 @@ header {
   padding-bottom: 14px;
 }
 
-.header-nav a:first-child {
+.header-nav .logo {
   background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
   background-position: 0 50%;
-  /* color: #ffffff; На случай, если лого не подгрузится. Но лого все равно два получилось */
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
+  /* color: #ffffff; На случай, если лого не подгрузится. Но лого все равно два получилось/
+   Лого в футере пропал */
 }
 
 .header-nav a:first-child:hover {
@@ -200,6 +201,7 @@ h1 {
   color: #ee3643;
   background-image: url(../img/icon-phone.svg);
   background-repeat: no-repeat;
+  background-position: 20px 50%;
 }
 
 .user-block a {
@@ -329,24 +331,76 @@ background-repeat: no-repeat;
 }
 
 /*________Футер_____________________ */
+.footer-nav,
 .nav-assortments {
   width: 100%;
   background-color: #32425c;
 }
+.footer-nav a,
+.nav-assortments a {
+  font-family:"Cuprum",
+  Arial,
+  sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left:;
+  font-weight: normal;
+  border: 1px solid red;
+}
+.nav-assortments a,
+.feedback-mail,
+.feedback-site {
+  color: #ffd180;
+}
+.nav-section:hover,
+.nav-assortment:hover {
+  text-decoration: underline;
+}
+.footer-nav a:focus,
+.nav-assortments a:focus {
+  opacity: 0.5;
+}
+.feedback-mail:hover,
+.feedback-site:hover {
+  text-decoration: underline;
+}
+.feedback-mail:focus,
+.feedback-site:focus {
+  color: #ee3643;
+  opacity: none;
+  /* все равно становится бледнее */
+}
+.feedback li,
+.contact-info {
+  font-family: "Cuprum",
+  Arial,
+  sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  color:#ffffff;
+}
 
 /*________Соц.сети_____________________ */
 .social-button {
-  content: "";
-  font-size: 0;
   height: 42px;
   width: 42px;
   border-radius: 50%;
   background-color: #212a3a;
 }
+
+/* .social-button { 
+  content: "";
+  font-size: 0;
+  line-height: 0;
+  не получилось отключить текст*/
+
+}
 .vk {
   background-image: url(../img/icon-vk.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  /* куда пропала иконка ВК? */
 }
 .fb {
   background-image: url(../img/icon-fb.svg);
@@ -361,6 +415,7 @@ background-repeat: no-repeat;
 .social-button:hover,
 .social-button:focus {
   background-color: #ee3643;
+  text-decoration: none;
 }
 
 /*______________Кнопки_______________ */
