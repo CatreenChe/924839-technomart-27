@@ -13,7 +13,7 @@
     */
 
 
-/*___________Основные__________ */
+/*___________ОСНОВНОЕ__________ */
 
 body {
   font-family: "PTSans", sans-serif;
@@ -38,11 +38,9 @@ header {
   background-color: #f4f7f9;
 }
 
-
-/*_____________Главная навигация______________________ */
-
 .nav-assortments,
 .list-manufacturers,
+.all-categories li,
 .delivery-partners,
 .service-controls,
 .nav-sections,
@@ -55,6 +53,9 @@ header {
   width: auto;
   background-color: #293449;
 }
+
+
+/* ________ХЕДЕР________ */
 
 .header-nav a {
   padding-top: 13px;
@@ -123,6 +124,64 @@ header {
 
 .header-nav a::not(:first-child):focus {
   background-color: #161d29;
+}
+
+
+/* ОСНОВНОЙ БЛОК */
+
+.main-section .main-item:first-child {
+  background-color: #ffbf47;
+  background-image: url(../img/paint.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 50%;
+}
+
+.main-section .main-item:last-child {
+  background-color: #ffbf47;
+  background-image: url(../img/car.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 50%;
+}
+
+.main-section .main-item:nth-child(2) {
+  background-color: #3bbce3;
+  background-image: url(../img/tool.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 50%;
+}
+
+.main-section .main-item:nth-child(3) {
+  background-color: #dc91d8;
+  background-image: url(../img/tractor.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 50%;
+}
+
+.main-section .main-item:nth-child(5) {
+  background-color: #8ed78f;
+  background-image: url(../img/basket.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 50%;
+}
+
+.main-item .category-button {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 18px;
+  padding: 12px 14px 24px;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+.main-item .headings-main-sections {
+  font-family: "CuprumBold", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  opacity: 1;
+  border-radius: 2px;
+  /* текст не должен быть прозраным. Как сделать? */
 }
 
 
@@ -250,7 +309,9 @@ background-repeat: no-repeat;
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
-  color: #fffff;
+}
+.headings-main-sections h3 {
+  color: #ffffff;
 }
 .serviсe {
   background-color: #f4f7f9;
@@ -330,7 +391,7 @@ background-repeat: no-repeat;
   color: #000000;
 }
 
-/*________Футер_____________________ */
+/*________ФУТЕР____________________ */
 .footer-nav,
 .nav-assortments {
   width: 100%;
@@ -381,7 +442,7 @@ background-repeat: no-repeat;
   color:#ffffff;
 }
 
-/*________Соц.сети_____________________ */
+/*________СОЦ.СЕТИ_____________________ */
 .social-button {
   height: 42px;
   width: 42px;
@@ -418,7 +479,7 @@ background-repeat: no-repeat;
   text-decoration: none;
 }
 
-/*______________Кнопки_______________ */
+/*______________КНОПКИ_______________ */
 .button {
   text-transform: uppercase;
   text-align: center;
