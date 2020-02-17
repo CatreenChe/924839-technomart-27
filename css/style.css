@@ -33,6 +33,10 @@ a {
   color: #ffffff;
 }
 
+.visually-hidden {
+  font-size: 0;
+}
+
 header {
   width: 100%;
   background-color: #f4f7f9;
@@ -175,7 +179,6 @@ header {
   color: #ffffff;
   opacity: 1;
   border-radius: 2px;
-  /* текст не должен быть прозраным. Как сделать? */
 }
 
 
@@ -407,6 +410,11 @@ h1 {
   border: 1px solid #ee3643;
 }
 
+.filter h2,
+.catalog .filter-controls {
+  background-color: #f7f3ec;
+}
+
 li .controls-item {
   font-family: "PTSans;", Arial, sans-serif;
   font-size: 13px;
@@ -417,10 +425,45 @@ li .controls-item {
 }
 
 li .controls-item:hover {
-  color: #0000;
-  opacity: none;
+  color: rgba(0, 0, 0, 1);
   border-bottom: 0.5px solid #ee3643;
 }
+
+li .controls-item:focus {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+.filter-gradation li {
+  list-style: none;
+  font-size: 0;
+  background-image: url(../img/icon-down.svg);
+  background-repeat: no-repeat;
+  border: 1px solid blueviolet;
+  opacity: 0.3;
+}
+
+.route-up {
+  transform: rotate(180deg);
+}
+
+.filter-gradation li:hover {
+  opacity: 1;
+}
+
+.filter-gradation li svg:focus {
+  fill: red;
+}
+
+.filter-controls li:first-child {
+  text-transform: uppercase;
+}
+
+
+/*Не помялся цвет  */
+
+
+/* НОМЕРА СТРАНИЦ ПОД КАРТОЧКАМИ ТОВАРОВ */
 
 .catalog-pages a {
   border: 1px solid #e5e5e5;
@@ -620,9 +663,9 @@ li .controls-item:hover {
   border: 1px solid #e5e5e5;
 }
 
-.manufacturer:hover {
-  /* нужна тень */
-}
+
+/*.manufacturer:hover {}
+нужна тень */
 
 .manufacturer:focus {
   opacity: 0.5;
