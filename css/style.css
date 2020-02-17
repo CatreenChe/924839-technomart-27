@@ -407,7 +407,7 @@ h1 {
 
 .breadcrumbs-icon-home a {
   font-size: 0;
-  border: 1px solid #ee3643;
+  /* и пропала возможно вернуться на главную страницу */
 }
 
 .filter h2,
@@ -479,6 +479,21 @@ li .controls-item:focus {
 
 .catalog-pages a:active {
   background-color: #ee3643;
+}
+
+
+/* ______Много текста О перфах______ */
+
+.tool {
+  background-color: #f4f7f9;
+}
+
+.tool .tool-description {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 
