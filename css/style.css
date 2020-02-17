@@ -384,25 +384,45 @@ h1 {
   font-weight: normal;
 }
 
-.breadcrumbs-item a {
-  color: #000000;
-  text-decoration: u;
-}
-
 
 /* КАТАЛОГ */
 
-.breadcrumbs-item li {
-  text-transform: uppercase;
+.breadcrumbs-item a,
+.catalog-pages a {
+  font-family: "PTSans;", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.catalog-pages a {
+.breadcrumbs-icon-home {
+  background-image: url(../img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+}
+
+.breadcrumbs-icon-home a {
+  font-size: 0;
+  border: 1px solid #ee3643;
+}
+
+li .controls-item {
+  font-family: "PTSans;", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #000000;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.18);
+  border-bottom: 0.5px dashed #ee3643;
+}
+
+li .controls-item:hover {
+  color: #0000;
+  opacity: none;
+  border-bottom: 0.5px solid #ee3643;
+}
+
+.catalog-pages a {
   border: 1px solid #e5e5e5;
 }
 
@@ -412,7 +432,6 @@ h1 {
 
 .catalog-pages a:focus {
   border: 1px solid #ee3643;
-  /* не срабатывает. Почему? тоже показывает background-color: #ee3643; */
 }
 
 .catalog-pages a:active {
