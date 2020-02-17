@@ -21,7 +21,6 @@ body {
   line-height: 24px;
   font-weight: normal;
   color: #000000;
-  border: 2px solid green;
 }
 
 a {
@@ -207,14 +206,7 @@ header {
   margin-left: 130px;
   margin-right: 130px;
   background-color: #32425c;
-  border: 4px solid gold;
   border-bottom: 4px solid #32425c;
-}
-
-.main-nav a {
-  margin-right: 30px;
-  margin-left: 30px;
-  border: 0.1px solid red;
 }
 
 .main-nav a:hover {
@@ -223,14 +215,6 @@ header {
 
 .main-nav a:focus {
   background-color: #1d2739;
-}
-
-.main-nav a:first-child {
-  margin-left: 52px;
-}
-
-.main-nav a:last-child {
-  margin-right: 55px;
 }
 
 h1 {
@@ -351,24 +335,11 @@ h1 {
 
 .serviсe li:hover {
   color: #ffffff;
-  background-color: #293449;
 }
 
 .serviсe li:active {
   color: #000000;
   background-color: #ffffff;
-}
-
-.serviсe-slide,
-.our-advantages,
-.contact-us {
-  border: 2px solid blueviolet;
-}
-
-.guarantee-slide,
-.delivery-slide,
-.credit-slide {
-  border: 1px dashed pink;
 }
 
 .our-advantages h2,
@@ -511,7 +482,6 @@ li .controls-item:focus {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
-  border: 1px solid red;
 }
 
 .footer-nav .logo {
@@ -589,7 +559,6 @@ li .controls-item:focus {
 
 .social-button:hover,
 .social-button:focus {
-  background-color: #ee3643;
   text-decoration: none;
 }
 
@@ -621,7 +590,6 @@ li .controls-item:focus {
   font-weight: bold;
   text-decoration: line-through;
   color: #999999;
-  border: 1px solid blue;
 }
 
 .action-item a {
@@ -737,4 +705,18 @@ li .controls-item:focus {
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+
+/* для наглядности */
+
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header {
+  outline: 1px solid red;
 }
