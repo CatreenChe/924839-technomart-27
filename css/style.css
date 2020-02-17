@@ -1,3 +1,55 @@
+/*___________ШРИФТЫ_________________________*/
+
+@font-face {
+  font-family: 'Cuprum';
+  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CuprumItalic';
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CuprumItalic';
+  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CuprumBold';
+  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CuprumBoldItalic';
+  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSansBold';
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /*___________Важное изменение_________*/
 
 
@@ -16,7 +68,7 @@
 /*___________ОСНОВНОЕ__________ */
 
 body {
-  font-family: "PTSans", sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
@@ -30,10 +82,6 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-}
-
-.visually-hidden {
-  font-size: 0;
 }
 
 header {
@@ -113,7 +161,7 @@ header {
   background-color: #ffffff;
 }
 
-.header-nav a::not(:first-child):focus {
+.header-nav a:not(:first-child):focus {
   background-color: #161d29;
 }
 
@@ -299,6 +347,7 @@ h1 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
 }
 
 .serviсe h3 {
@@ -361,9 +410,18 @@ h1 {
 
 /* КАТАЛОГ */
 
+.main-catalog h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
 .breadcrumbs-item a,
 .catalog-pages a {
-  font-family: "PTSans;", Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -381,13 +439,34 @@ h1 {
   /* и пропала возможно вернуться на главную страницу */
 }
 
-.filter h2,
+.filter h3,
 .catalog .filter-controls {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
   background-color: #f7f3ec;
 }
 
+.filter-form-title {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+}
+
+.filter-checkbox-control,
+.filter-form-energy {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 li .controls-item {
-  font-family: "PTSans;", Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -410,7 +489,6 @@ li .controls-item:focus {
   font-size: 0;
   background-image: url(../img/icon-down.svg);
   background-repeat: no-repeat;
-  border: 1px solid blueviolet;
   opacity: 0.3;
 }
 
@@ -573,7 +651,7 @@ li .controls-item:focus {
 
 .new-price {
   text-transform: uppercase;
-  font-family: "PTSans;", Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -584,7 +662,7 @@ li .controls-item:focus {
 
 .old-price {
   text-transform: uppercase;
-  font-family: "PTSans;", Arial, sans-serif;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -662,49 +740,8 @@ li .controls-item:focus {
   line-height: 20px;
 }
 
-
-/*___________ШРИФТЫ_________________________*/
-
-@font-face {
-  font-family: 'Cuprum';
-  src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumItalic';
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumBold';
-  src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CuprumBoldItalic';
-  src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTSans';
-  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTSansBold';
-  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.visually-hidden {
+  font-size: 0;
 }
 
 
