@@ -78,7 +78,6 @@ body {
 a {
   font-family: "Cuprum", Arial, sans-serif;
   text-decoration: none;
-  display: inline-block;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -111,18 +110,30 @@ header {
 
 /* ________ХЕДЕР________ */
 
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  min-height: 42px;
+  margin-bottom: 0;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
 .header-nav .logo {
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
   color: #ffffff;
+  width: 220px;
+  height: 47px;
+  margin-left: 20px;
 }
 
-.header-nav a:first-child:hover {
+.header-nav .logo:hover {
   background-color: #ca2c37;
   border-bottom: 3px solid #9a212a;
 }
 
-.header-nav a:first-child:focus {
+.header-nav .logo:focus {
   background-color: #ba2732;
   border-bottom: 3px solid #8e1e26;
 }
@@ -135,6 +146,28 @@ header {
   background-image: url(../img/icon-search.svg);
   background-repeat: no-repeat;
   opacity: 0.7;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  /* временно для сетки  */
+}
+
+.user-activity {
+  display: flex;
+  width: 63%;
+  justify-content: space-around;
+  min-height: 42px;
+  /* временно для сетки  */
+}
+
+.user-activity a {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header-nav .bookmark {
@@ -152,7 +185,7 @@ header {
 }
 
 .button-search:hover,
-.header-nav a:not(:first-child):hover {
+.header-nav .logo:hover {
   opacity: 1;
 }
 
@@ -161,8 +194,91 @@ header {
   background-color: #ffffff;
 }
 
-.header-nav a:not(:first-child):focus {
+.header-nav .logo:focus {
   background-color: #161d29;
+}
+
+
+/* ОФормить заказ */
+
+.header-nav .order {
+  background-color: #63a63e;
+}
+
+.header-nav .order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-nav .order:focus {
+  background-color: #518534;
+}
+
+.header-nav a:focus {
+  background-color: #161d29;
+}
+
+
+/* ____________________________________ */
+
+.main-info {
+  display: flex;
+  min-height: 278 px;
+  background-color: rgba(0, 101, 110, 0.3);
+  /* временно для сетки */
+}
+
+.main-nav {
+  margin-left: 130px;
+  margin-right: 130px;
+  background-color: #32425c;
+  border-bottom: 4px solid #32425c;
+}
+
+.main-nav a:hover {
+  background-color: #293449;
+}
+
+.main-nav a:focus {
+  background-color: #1d2739;
+}
+
+h1 {
+  font-family: "CuprumItalic", Arial, sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.сontact-us {
+  font-family: "Cuprum", Arial, sans-serif;
+  list-style: none;
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.сontact-us a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  border: 3px solid #ffffff;
+  color: #ee3643;
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
+}
+
+.user-block a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  background-color: #f4f7f9;
+  border: 3px solid #ffffff;
+}
+
+.user-action:first-child {
+  background-image: url(../img/icon-entrance.svg);
+  background-repeat: no-repeat;
 }
 
 
@@ -226,82 +342,6 @@ header {
   color: #ffffff;
   opacity: 1;
   border-radius: 2px;
-}
-
-
-/* ОФормить заказ */
-
-.header-nav a:last-of-type {
-  background-color: #63a63e;
-}
-
-.header-nav a:last-of-type:hover {
-  background-color: #5fbb2d;
-}
-
-.header-nav a:last-of-type:focus {
-  background-color: #518534;
-}
-
-.header-nav a:focus {
-  background-color: #161d29;
-}
-
-
-/* ____________________________________ */
-
-.main-nav {
-  margin-left: 130px;
-  margin-right: 130px;
-  background-color: #32425c;
-  border-bottom: 4px solid #32425c;
-}
-
-.main-nav a:hover {
-  background-color: #293449;
-}
-
-.main-nav a:focus {
-  background-color: #1d2739;
-}
-
-h1 {
-  font-family: "CuprumItalic", Arial, sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ee3643;
-}
-
-.сontact-us {
-  font-family: "Cuprum", Arial, sans-serif;
-  list-style: none;
-  color: #32425c;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.сontact-us a {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 21px;
-  border: 3px solid #ffffff;
-  color: #ee3643;
-  background-image: url(../img/icon-phone.svg);
-  background-repeat: no-repeat;
-  background-position: 20px 50%;
-}
-
-.user-block a {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 15px;
-  color: #000000;
-  background-color: #f4f7f9;
-  border: 3px solid #ffffff;
-}
-
-.user-action:first-child {
-  background-image: url(../img/icon-entrance.svg);
-  background-repeat: no-repeat;
 }
 
 
@@ -550,7 +590,6 @@ li .controls-item:focus {
 
 .footer-nav,
 .nav-assortments {
-  width: 100%;
   background-color: #32425c;
 }
 
