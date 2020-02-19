@@ -66,6 +66,7 @@ body {
   line-height: 24px;
   font-weight: normal;
   color: #000000;
+  min-width: 1200px;
 }
 
 a {
@@ -390,16 +391,6 @@ h1 {
 
 
 /*  */
-
-.popular {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  height: 89px;
-  background-color: #f9f5f0;
-  padding-right: 24px;
-  padding-left: 30px;
-}
 
 .main-item {
   width: 300px;
@@ -895,22 +886,27 @@ li .controls-item:focus {
 
 /*___________________________________  */
 
-.production-list,
-.list-manufacturers {
+.popular-production {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding-left: 0;
+  flex-direction: column;
 }
 
-.manufacturers {
-  flex-direction: column;
-  padding-bottom: 86px;
+.popular {
+  display: flex;
+  justify-content: space-between;
+  min-height: 89px;
+  background-color: #f9f5f0;
 }
 
 .production-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.production-list {
+  display: flex;
   justify-content: space-between;
 }
 
@@ -929,6 +925,22 @@ li .controls-item:focus {
 .manufacturer {
   text-align: center;
   border: 1px solid #e5e5e5;
+}
+
+.list-manufacturers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.list-manufacturers li {
+  width: 25%;
+}
+
+.manufacturers {
+  flex-direction: column;
+  padding-bottom: 86px;
 }
 
 
