@@ -11,28 +11,21 @@
   font-family: 'Cuprum';
   src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
   font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Cuprum';
-  src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
   font-family: 'Cuprum';
   src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum';
   src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
@@ -45,7 +38,7 @@
 @font-face {
   font-family: 'PTSans';
   src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -539,6 +532,13 @@ h1 {
 
 /* КАТАЛОГ */
 
+.main-catalog {
+  display: flex;
+  margin-left: 130px;
+  margin-right: 130px;
+  flex-direction: column;
+}
+
 .main-catalog h2 {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -681,36 +681,14 @@ li .controls-item:focus {
   background-color: #32425c;
   display: flex;
   flex-direction: column;
-  min-height: 42px;
-  margin-bottom: 0;
   padding-left: 130px;
   padding-right: 130px;
 }
 
-.main-footer ul {
-  padding-left: 0;
-}
-
-.up-footer {
+.footer-nav {
+  width: 100%;
   display: flex;
-}
-
-.down-footer {
-  display: flex;
-}
-
-.nav-sections {
-  display: flex;
-  width: 70%;
-  justify-content: space-around;
-  margin-right: 0;
-}
-
-.nav-assortments {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-  margin-right: 0;
+  flex-direction: column;
 }
 
 .footer-nav a,
@@ -725,6 +703,36 @@ li .controls-item:focus {
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
   color: #ffffff;
+}
+
+.main-footer ul {
+  padding-left: 0;
+}
+
+.up-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.down-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-sections {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  margin-right: 0;
+}
+
+.nav-assortments {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+  margin-right: 0;
 }
 
 .nav-assortments a,
@@ -744,6 +752,8 @@ li .controls-item:focus {
 }
 
 .feedback {
+  margin-top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
@@ -771,6 +781,11 @@ li .controls-item:focus {
 
 /*________СОЦ.СЕТИ_____________________ */
 
+.social-button-block {
+  display: flex;
+  min-width: 100px;
+}
+
 .social-button {
   height: 42px;
   width: 42px;
@@ -780,6 +795,7 @@ li .controls-item:focus {
 
 .social-button-block a {
   font-size: 0;
+  display: inline-block;
 }
 
 .vk {
@@ -890,6 +906,18 @@ li .controls-item:focus {
 .manufacturers {
   flex-direction: column;
   padding-bottom: 86px;
+}
+
+.production-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+  display: flex;
 }
 
 .production-list li {
