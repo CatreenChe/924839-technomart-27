@@ -90,7 +90,7 @@ header {
 .nav-sections,
 .feedback li,
 .breadcrumbs-item,
-.filter-controls,
+.sorting-controls,
 .catalog-pages {
   list-style: none;
 }
@@ -539,6 +539,11 @@ h1 {
   color: #32425c;
 }
 
+.breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .breadcrumbs-item a,
 .catalog-pages a {
   font-family: "PTSans", Arial, sans-serif;
@@ -559,14 +564,28 @@ h1 {
   /* и пропала возможноcть вернуться на главную страницу */
 }
 
+.catalog {
+  display: flex;
+}
+
 .filter h3,
-.catalog .filter-controls {
+.catalog-display .sorting-controls {
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
   background-color: #f7f3ec;
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-form-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-form-title {
@@ -604,7 +623,17 @@ li .controls-item:focus {
   border-bottom: none;
 }
 
-.filter-gradation li {
+.catalog-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-controls,
+.sorting-direction {
+  display: flex;
+}
+
+.sorting-direction li {
   list-style: none;
   font-size: 0;
   background-image: url(../img/icon-down.svg);
@@ -612,19 +641,19 @@ li .controls-item:focus {
   opacity: 0.3;
 }
 
-.route-up {
+.upward {
   transform: rotate(180deg);
 }
 
-.filter-gradation li:hover {
+.sorting-direction li:hover {
   opacity: 1;
 }
 
-.filter-gradation li svg:focus {
+.sorting-direction li svg:focus {
   fill: red;
 }
 
-.filter-controls li:first-child {
+.sorting-controls li:first-child {
   text-transform: uppercase;
 }
 
@@ -633,6 +662,10 @@ li .controls-item:focus {
 
 
 /* НОМЕРА СТРАНИЦ ПОД КАРТОЧКАМИ ТОВАРОВ */
+
+.catalog-pages {
+  display: flex;
+}
 
 .catalog-pages a {
   border: 1px solid #e5e5e5;
@@ -910,13 +943,11 @@ li .controls-item:focus {
   justify-content: space-between;
 }
 
-.row-1,
-.row-2,
-.row-3 {
+.catalog-row {
   display: flex;
 }
 
-.production-list li {
+.production-list-catalog li {
   list-style: none;
   margin: 0;
 }
