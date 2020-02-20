@@ -108,9 +108,12 @@ header {
   display: flex;
   flex-direction: row;
   min-height: 42px;
-  margin-bottom: 0;
-  padding-left: 130px;
-  padding-right: 130px;
+}
+
+.header-nav .container {
+  min-width: 940px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .header-nav .logo {
@@ -142,21 +145,10 @@ header {
   opacity: 0.7;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  /* временно для сетки  */
-}
-
 .user-activity {
   display: flex;
   width: 63%;
   justify-content: space-around;
-  min-height: 42px;
-  /* временно для сетки  */
 }
 
 .user-activity a {
@@ -214,7 +206,7 @@ header {
 
 /* ____________________________________ */
 
-.main-info-container {
+.second-nav {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
@@ -222,22 +214,23 @@ header {
   justify-content: flex-start;
 }
 
+.second-nav .container {
+  min-width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .main-info {
   display: flex;
-  padding-left: 183px;
-  padding-right: 130px;
   justify-content: space-between;
 }
 
 .main-nav {
   display: flex;
   justify-content: space-around;
-  margin-left: 130px;
-  margin-right: 130px;
   padding: 24px 0;
   background-color: #32425c;
   border-bottom: 4px solid #32425c;
-  /* текст вываливается при изминении масштаба страницы */
 }
 
 .main-nav a:hover {
@@ -420,9 +413,10 @@ h1 {
   background-color: #f4f7f9;
 }
 
-.serviсe-container {
-  display: flex;
-  justify-content: space-around;
+.serviсe .container {
+  min-width: 940px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .service-controls .serviсe h2 {
@@ -474,17 +468,18 @@ h1 {
   background-color: #ffffff;
 }
 
-.info-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline
-}
-
 .contact-us {
   display: flex;
   flex-direction: column;
-  min-width: 300px;
-  /* изначально было width: 30%, но тогда карта вывалиается при изменении М */
+}
+
+.block-about-us .container {
+  min-width: 940px;
+  padding: 0;
+  margin: 0 auto;
+  /*  */
+  display: flex;
+  justify-content: space-around;
 }
 
 .contact-us p {
@@ -510,6 +505,11 @@ h1 {
 
 .delivery-partners {
   padding-left: 0;
+}
+
+.our-advantages {
+  display: flex;
+  flex-direction: column;
 }
 
 .delivery-partner a {
@@ -688,6 +688,13 @@ li .controls-item:focus {
 
 .tool {
   background-color: #f4f7f9;
+  display: flex;
+}
+
+.tool .container {
+  min-width: 940px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .tool .tool-description {
@@ -705,17 +712,15 @@ li .controls-item:focus {
   background-color: #32425c;
   display: flex;
   flex-direction: column;
-  padding-left: 130px;
-  padding-right: 130px;
 }
 
-.footer-nav {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.main-footer .container {
+  min-width: 940px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.footer-nav a,
+.container .nav-section,
 .nav-assortments a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -723,26 +728,14 @@ li .controls-item:focus {
   font-weight: normal;
 }
 
-.footer-nav .logo {
+.container .logo {
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
   color: #ffffff;
 }
 
-.main-footer ul {
+.container ul {
   padding-left: 0;
-}
-
-.up-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.down-footer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .nav-sections {
@@ -956,6 +949,7 @@ li .controls-item:focus {
 .manufacturer {
   text-align: center;
   border: 1px solid #e5e5e5;
+  align-content: stretch;
 }
 
 .list-manufacturers {
@@ -982,16 +976,39 @@ li .controls-item:focus {
   opacity: 0.5;
 }
 
+.production-list li {
+  list-style: none;
+  margin: 0;
+}
+
 .production-name h3 {
   color: #000000;
   font-weight: bold;
   font-size: 18px;
-  /* уточнить размеры */
   line-height: 20px;
 }
 
 .visually-hidden {
   font-size: 0;
+}
+
+
+/*ФОРМЫ */
+
+
+/* .user-data {
+  font-family: "Cuprum", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+} */
+
+.user-data input[type=text] {
+  font-family: "PTSans", Arial, sans-serif;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 
