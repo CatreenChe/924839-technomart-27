@@ -411,6 +411,7 @@ h1 {
 
 .serviсe {
   background-color: #f4f7f9;
+  display: flex;
 }
 
 .serviсe .container {
@@ -494,6 +495,11 @@ h1 {
   padding: 0;
 }
 
+.our-advantages {
+  display: flex;
+  flex-direction: column;
+}
+
 .our-advantages h2,
 .contact-us h2 {
   font-family: "Cuprum", Arial, sans-serif;
@@ -505,11 +511,6 @@ h1 {
 
 .delivery-partners {
   padding-left: 0;
-}
-
-.our-advantages {
-  display: flex;
-  flex-direction: column;
 }
 
 .delivery-partner a {
@@ -964,6 +965,7 @@ li .controls-item:focus {
 }
 
 .manufacturers {
+  display: flex;
   flex-direction: column;
   padding-bottom: 86px;
 }
