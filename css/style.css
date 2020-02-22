@@ -330,9 +330,10 @@ h1 {
 .main-item {
   background-repeat: no-repeat;
   background-position: 196px 50%;
+  margin-right: 20px;
 }
 
-.items-discounts-delivery {
+.discounts-delivery {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -754,14 +755,9 @@ li .controls-item:focus {
 .main-footer {
   background-color: #32425c;
   display: flex;
-  flex-direction: column;
 }
 
-.main-footer .container {
-  min-width: 940px;
-  margin: 0 auto;
-  padding: 0;
-}
+.main-footer .container {}
 
 .container .nav-section,
 .nav-assortments a {
@@ -769,23 +765,34 @@ li .controls-item:focus {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
 }
 
 .container .logo {
   background-color: #ee3643;
   border-bottom: 3px solid #ca2c37;
   color: #ffffff;
+  padding-left: 41px;
+  padding-right: 41px;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
-.container ul {
-  padding-left: 0;
+.block-main-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-sections {
   display: flex;
-  width: 70%;
-  justify-content: space-around;
-  margin-right: 0;
+  padding-left: 30x;
+  padding-right: 30px;
+}
+
+.block-assortment {
+  display: flex;
 }
 
 .nav-assortments {
@@ -812,11 +819,9 @@ li .controls-item:focus {
 }
 
 .feedback {
-  margin-top: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-self: flex-end;
+  padding: 0;
 }
 
 .feedback-mail:hover,
@@ -829,11 +834,18 @@ li .controls-item:focus {
   color: #ee3643;
 }
 
-.feedback li,
-.contact-info {
+.feedback li {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.contact-info {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: normal;
   color: #ffffff;
 }
