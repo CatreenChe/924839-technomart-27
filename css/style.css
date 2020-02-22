@@ -285,18 +285,29 @@ h1 {
   padding-left: 74px;
 }
 
+.user-block {
+  background-color: #ffffff;
+}
+
 .user-block a {
   display: inline-flex;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 25px;
   padding-right: 25px;
   background-position: 5% 50%;
+}
+
+.user-details {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .user-action:first-child {
@@ -470,8 +481,24 @@ h1 {
   min-width: 240px;
 }
 
-.serviсe-slide {
+.service-controls .service-item {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30x;
+  font-weight: bold;
+  padding-top: 21px;
+  padding-right: 140px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+}
+
+
+/* .serviсe-slide {
   width: 88%;
+} */
+
+.description-servise {
+  display: inline-flex;
 }
 
 .service-controls .serviсe h2 {
@@ -756,8 +783,6 @@ li .controls-item:focus {
   background-color: #32425c;
   display: flex;
 }
-
-.main-footer .container {}
 
 .container .nav-section,
 .nav-assortments a {
