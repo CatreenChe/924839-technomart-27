@@ -341,27 +341,32 @@ h1 {
 .main-section .materials {
   background-color: #ffbf47;
   background-image: url(../img/paint.svg);
+  background-position: 213px;
 }
 
 .main-section .instruments {
   background-color: #3bbce3;
   background-image: url(../img/tool.svg);
+  background-position: 197px;
 }
 
 .main-section .technology {
   background-color: #dc91d8;
   background-image: url(../img/tractor.svg);
+  background-position: 211px;
 }
 
 .main-section .discounts {
   background-color: #8ed78f;
   background-image: url(../img/basket.svg);
+  background-position: 216px;
   margin-top: 20px;
 }
 
 .main-section .delivery {
   background-color: #ffbf47;
   background-image: url(../img/car.svg);
+  background-position: 211px;
   margin-top: 20px;
 }
 
@@ -377,10 +382,16 @@ h1 {
 
 .main-item .category-button {
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 24px;
+  text-transform: uppercase;
+  font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  padding-bottom: 14px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin-left: 25px;
 }
 
 .main-item .category-button:hover {
@@ -391,13 +402,16 @@ h1 {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.main-item .headings-main-sections {
+.headings-main-sections {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   opacity: 1;
   border-radius: 2px;
+  padding-left: 23px;
+  padding-top: 26px;
+  margin-top: 0;
 }
 
 
