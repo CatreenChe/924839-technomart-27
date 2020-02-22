@@ -547,9 +547,6 @@
     display: flex;
     justify-content: space-between;
   }
-  /* .our-advantages {
-  width: 69%;
-} */
   
   .contact-us {
     display: flex;
@@ -562,13 +559,8 @@
     padding: 0;
   }
   
-  .our-advantages {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .our-advantages h2,
-  .contact-us h2 {
+  .our-advantages h3,
+  .contact-us h3 {
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
@@ -576,8 +568,14 @@
     text-transform: uppercase;
   }
   
-  .delivery-partners {
+  .delivery-partner {
+    margin-bottom: 17px;
     padding-left: 0;
+  }
+  
+  .delivery-partners {
+    display: flex;
+    flex-direction: column;
   }
   
   .delivery-partner a {
@@ -902,6 +900,11 @@
     text-transform: uppercase;
     text-align: center;
     background-color: #ee3643;
+    border-radius: 2px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    align-self: center;
+    min-width: 250px;
   }
   /*___________________________________  */
   
@@ -915,7 +918,7 @@
     flex-direction: column;
   }
   
-  .heading-production {
+  .section-heading-with-button {
     display: flex;
     justify-content: space-between;
     background-color: #f9f5f0;
@@ -924,16 +927,11 @@
     padding-left: 30px;
   }
   
-  .heading-production h2 {
+  .section-heading-with-button h2 {
     font-family: "Cuprum", Arial, sans-serif;
     text-decoration: none;
     font-size: 30px;
     color: #32425c;
-  }
-  
-  .heading-production a {
-    border-radius: 2px;
-    padding: 14px 55px;
   }
   
   .production-list {
@@ -946,6 +944,16 @@
     width: 218px;
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+  
+  .action-item {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    visibility: hidden;
+    top: 44px;
+    left: 42px
   }
   
   .action-item a {
@@ -953,6 +961,22 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
+  }
+  
+  .production:hover .action-item {
+    visibility: visible;
+  }
+  
+  .production-name {
+    order: -1
+  }
+  
+  .production img {
+    order: -2
+  }
+  
+  .production:hover img {
+    visibility: hidden;
   }
   
   .action-buy {
@@ -1013,10 +1037,9 @@
     font-weight: bold;
     text-decoration: line-through;
     color: #999999;
-    padding-left: 36px;
-    padding-right: 40px;
     padding-top: 13px;
     padding-bottom: 13px;
+    text-align: center;
   }
   
   .new-price {
@@ -1027,26 +1050,47 @@
     font-weight: bold;
     color: #ffffff;
     background-color: #ee3643;
-    padding-left: 36px;
-    padding-right: 40px;
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 49px;
     padding-top: 13px;
     padding-bottom: 13px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
   }
   
-  .production,
-  .manufacturer {
-    text-align: center;
-    border: 1px solid #e5e5e5;
+  .new-price:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    background: #ee3643;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: -16px;
+  }
+  
+  .popular-manufacturer {
+    margin-bottom: 60px;
   }
   
   .list-manufacturers {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 21px;
+    padding-left: 0;
   }
   
   .list-manufacturers li {
-    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 145px;
+    margin-bottom: 20px;
+    border: solid 1px #eaeaea;
   }
   
   */
