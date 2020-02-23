@@ -1054,6 +1054,21 @@
       display: flex;
       justify-content: space-between;
     }
+    /* display: flex;
+    justify-content: space-between;
+    padding-left: 0; */
+    /* .popular-production {
+  display: block;
+} */
+    /* .popular-production {
+  display: flex;
+}
+
+.popular-production {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+} */
     
     .production {
       position: relative;
@@ -1191,6 +1206,119 @@
       border: 20px solid white;
       border-left-color: #ee3643;
     }
+    /* .action-item a {
+    font-family: "Cuprum", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .production:hover .action-item {
+    visibility: visible;
+  }
+  
+  .production-name {
+    order: -1
+  }
+  
+  .production img {
+    order: -2
+  }
+  
+  .production:hover img {
+    visibility: hidden;
+  }
+  
+  .action-buy {
+    color: #ffffff;
+    text-align: center;
+    background-color: #63a63e;
+    border-bottom: 3px solid #367315;
+    border-radius: 2px;
+    background-image: url(../img/icon-basket.svg);
+    background-repeat: no-repeat;
+    background-position: 14px 50%;
+    padding-left: 45px;
+    padding-right: 49px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  
+  .action-buy:hover {
+    background-color: #5fbb2d;
+    border-bottom: 3px solid #367315;
+  }
+  
+  .action-buy:focus {
+    background-color: #518534;
+  }
+  
+  .action-bookmark {
+    color: #32425c;
+    border: 3px solid #63a63e;
+    border-radius: 2px;
+    padding-left: 36px;
+    padding-right: 32px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+  }
+  
+  .action-bookmark:hover {
+    border: 3px solid #32425c;
+  }
+  
+  .action-bookmark:focus {
+    border: 3px solid #32425c;
+    opacity: 0.3;
+  }
+  
+  .production-name h3 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+  } */
+    /* .old-price {
+    text-transform: uppercase;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #999999;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+  }
+  
+  .new-price {
+    text-transform: uppercase;
+    font-family: "PTSans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ee3643;
+    text-align: center;
+    margin-left: 36px;
+    margin-right: 49px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
+  }
+  
+  .new-price:before {
+    content: '';
+    width: 31px;
+    height: 31px;
+    background: #ee3643;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 7px;
+    right: -16px;
+  } */
     
     .popular-manufacturer {
       margin-bottom: 60px;
