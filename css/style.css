@@ -308,6 +308,8 @@
       display: flex;
     }
     
+    .user-action-index {}
+    
     .user-action {
       display: inline-flex;
       font-family: "Cuprum", Arial, sans-serif;
