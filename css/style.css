@@ -175,9 +175,17 @@
       background-color: #212a3a;
     }
     
+    .user-activity a:active {
+      background-color: #ee3643;
+    }
+    
     .user-activity .bookmark:hover::before,
     .user-activity .basket:hover::before {
       opacity: 1;
+    }
+    
+    .user-activity .product {
+      background-color: #ee3643;
     }
     /* Что-то тут не так */
     
@@ -267,17 +275,6 @@
       line-height: 24px;
       color: #32425c;
     }
-    /* .address-header a {
-      font-family: "Cuprum", Arial, sans-serif;
-      font-size: 21px;
-      line-height: 21px;
-      border: 3px solid #ffffff;
-      color: #ee3643;
-      background-image: url(../img/icon-phone.svg);
-      background-repeat: no-repeat;
-      background-position: 15px 50%;
-      padding-left: 74px;
-    } */
     
     .main-nav {
       display: flex;
@@ -328,19 +325,24 @@
     }
     
     .user-block-wrapper {
+      margin: 0;
       background-color: #ffffff;
-      padding-left: 0%;
+      padding-left: 0;
+      padding-bottom: 0;
     }
     
     .user-block li,
     .user-block-details {
       list-style: none;
+      position: relative;
+      text-align: center;
+      padding-top: 14px;
     }
     
     .user-block,
     .user-block-details {
       display: flex;
-      padding-left: 0%;
+      padding-left: 0;
     }
     
     .user-action-index {
@@ -350,8 +352,9 @@
     }
     
     .user-block .registration {
-      padding-left: 25px;
       padding-right: 25px;
+      padding-left: 25px;
+      margin: 0;
     }
     
     .user-block .entrance {
@@ -395,9 +398,70 @@
       text-decoration: underline;
     }
     
-    .user-action:first-child {
+    .user-details:hover {
+      color: #ee3643;
+    }
+    
+    .user-details:active {
+      color: #32425c;
+      opacity: 0.3;
+    }
+    
+    .user-block-details li:first-child {
+      padding-right: 15px;
+    }
+    
+    .user-block-details li:last-child {
+      padding-left: 9px;
+    }
+    
+    .user-block-details::before {
+      position: absolute;
+      content: "";
+      width: 4px;
+      height: 4px;
+      left: 85px;
+      top: 9px;
+      background-color: #000000;
+    }
+    /* .user-action:first-child {
       background-image: url(../img/icon-entrance.svg);
       background-repeat: no-repeat;
+    } */
+    
+    .user-block .exit {
+      font-size: 0;
+    }
+    
+    .user-block .exit::after {
+      content: "";
+      background-image: url(../img/icon-exit.svg);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 17px;
+      position: absolute;
+      opacity: 0.3;
+    }
+    
+    .user-block .name::before {
+      content: "";
+      background-image: url(../img/icon-user.svg);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 18px;
+      position: absolute;
+      left: 6px;
+      opacity: 0.3;
+    }
+    
+    .user-block .exit:hover::after,
+    .user-block .name:hover::before {
+      opacity: 1;
+    }
+    
+    .user-block .exit:focus::after,
+    .user-block .name:focus::before {
+      opacity: 0.3;
     }
     /* ОСНОВНОЙ БЛОК */
     
@@ -1336,6 +1400,10 @@
     
     .action-buy:focus {
       background-color: #518534;
+    }
+    
+    .action-buy:focus {
+      background-color: #ee3643;
     }
     
     .action-bookmark {
