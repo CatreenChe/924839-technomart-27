@@ -95,10 +95,6 @@
         list-style: none;
       }
       
-      .header-nav {
-        background-color: #293449;
-      }
-      
       .container {
         width: 940px;
         margin: 0 auto;
@@ -108,8 +104,12 @@
       
       .header-nav {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
         flex-direction: row;
-        min-height: 42px;
+        max-height: 42px;
+        background-color: #293449;
       }
       
       .header-nav .logo {
@@ -133,17 +133,20 @@
       
       .header-nav .container {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         justify-content: space-between;
+        min-height: 42px;
       }
       
       .user-activity {
-        padding-top: 14px;
-        padding-bottom: 13px;
+        display: flex;
+        justify-content: flex-end;
       }
       
       .user-activity a {
-        padding-left: 15px;
-        padding-right: 20px;
+        padding-top: 12px;
+        padding-bottom: 14px;
         opacity: 1;
         position: relative;
       }
@@ -152,6 +155,7 @@
         content: "";
         background-image: url(../img/icon-bookmark.svg);
         color: #ffffff;
+        left: 23px;
         width: 14px;
         height: 16px;
         background-repeat: no-repeat;
@@ -159,16 +163,33 @@
         opacity: 0.3;
       }
       
+      .user-activity .bookmark {
+        padding-left: 50px;
+        padding-right: 28px;
+      }
+      
       .user-activity .basket::before {
         content: "";
         background-image: url(../img/icon-basket.svg);
-        left: 16px;
+        left: 19px;
         color: #ffffff;
         width: 15px;
         height: 15px;
         background-repeat: no-repeat;
         position: absolute;
         opacity: 0.3;
+      }
+      
+      .user-activity .basket {
+        padding-left: 50px;
+        padding-right: 26px;
+        background-color: #ee3643;
+      }
+      
+      .user-activity .order {
+        padding-left: 20px;
+        padding-right: 22px;
+        background-color: #ee3643;
       }
       
       .user-activity a:hover {
@@ -184,30 +205,65 @@
         opacity: 1;
       }
       
-      .user-activity .product {
-        background-color: #ee3643;
+      .button-search>input {
+        background-color: #293449;
+        border: 0;
+        outline: none;
+        min-height: 40px;
+        width: 100%;
+        text-indent: 49px;
       }
-      /* Что-то тут не так */
+      
+      .button-search>input::placeholder {
+        color: white;
+        opacity: 1;
+      }
+      
+      .button-search>input:focus-within {
+        background-color: #ffffff;
+        background-image: url(../img/icon-search-red.svg);
+        background-repeat: no-repeat;
+        background-position-x: 19px;
+        background-position-y: 10px;
+      }
+      
+      .button-search>input:focus-within::before {
+        content: "";
+        background-image: url(../img/icon-search.svg);
+        top: 25%;
+        left: 19px;
+        color: red;
+        width: 17px;
+        height: 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+      }
       
       .button-search {
         font-family: "Cuprum", Arial, sans-serif;
-        background-image: url(../img/icon-search.svg);
-        background-repeat: no-repeat;
         font-size: 17px;
         line-height: 18px;
         color: #ffffff;
-        background-position: 0 50%;
-        padding-top: 13px;
+        position: relative;
+        flex-grow: 2;
+      }
+      
+      .button-search::before {
+        content: "";
+        background-image: url(../img/icon-search.svg);
+        top: 25%;
+        left: 19px;
+        color: #ffffff;
+        width: 17px;
+        height: 17px;
+        background-repeat: no-repeat;
+        position: absolute;
+        opacity: 0.3;
       }
       
       .button-search:hover,
       .header-nav .logo:hover {
         opacity: 1;
-      }
-      
-      .button-search:active {
-        color: #000000;
-        background-color: #ffffff;
       }
       
       .header-nav .logo:focus {
@@ -241,6 +297,8 @@
       }
       
       .second-nav .container {
+        display: flex;
+        flex-wrap: wrap;
         min-width: 940px;
         margin: 0 auto;
         padding: 0;
@@ -249,6 +307,10 @@
       .main-info {
         display: flex;
         justify-content: space-between;
+      }
+      
+      .main-info h1 {
+        padding-left: 52px;
       }
       
       .address-header {
@@ -279,6 +341,7 @@
       .main-nav {
         display: flex;
         justify-content: center;
+        align-items: center;
         background-color: #32425c;
         border-bottom: 4px solid #32425c;
       }
@@ -343,6 +406,8 @@
       .user-block-details {
         display: flex;
         padding-left: 0;
+        padding-top: 0;
+        margin: 0;
       }
       
       .user-action-index {
@@ -683,6 +748,7 @@
       
       .service .container {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
       }
       
@@ -779,6 +845,7 @@
       
       .block-about-us .container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
       }
       
@@ -1085,16 +1152,15 @@
         display: flex;
       }
       
-      .block-main-nav .container {
-        display: flex;
-      }
-      
+      .block-main-nav .container,
       .block-assortment .container {
         display: flex;
+        flex-wrap: wrap;
       }
       
       .nav-assortments {
         display: flex;
+        flex-wrap: wrap;
         width: 60%;
         justify-content: space-around;
         margin-right: 0;
@@ -1115,10 +1181,6 @@
         background-color: #ee3643;
         border-bottom: 3px solid #ca2c37;
         color: #ffffff;
-        padding-left: 41px;
-        padding-right: 41px;
-        padding-top: 20px;
-        padding-bottom: 25px;
       }
       
       .block-main-nav {
@@ -1543,7 +1605,11 @@
 } */
       /* для наглядности */
       
-      div,
+      S */ .map-form,
+      .feedback-form {
+        display: none;
+      }
+      /* div,
       section,
       a,
       ul,
@@ -1552,9 +1618,4 @@
       footer,
       header {
         outline: 1px solid red;
-      }
-      
-      .map-form,
-      .feedback-form {
-        display: none;
-      }
+      } */
