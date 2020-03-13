@@ -1070,11 +1070,11 @@ h1 {
 
 .sorting-filter {
   background-color: #f7f3ec;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .sorting-filter-list,
@@ -1082,6 +1082,7 @@ h1 {
   list-style: none;
   display: inherit;
   position: relative;
+  margin: 0;
 }
 
 .sorting-filter h3,
@@ -1098,22 +1099,31 @@ h1 {
 .filter h3 {
   padding-left: 19px;
   vertical-align: middle;
-  padding-top: 5px;
+  margin-top: 10px;
 }
 
 .sorting-filter-list {
-  padding-left: 0;
-  display: inherit;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  /* justify-content: stretch; */
+  padding: 0;
+  margin: 0;
+  margin-left: 72px;
+  min-width: 355px;
+}
+
+.sorting-filter-list li {
+  padding-bottom: 5px;
 }
 
 .sorting-item a {
-  margin-left: 30px;
-  margin-right: 40px;
   color: rgba(0, 0, 0, 0.18);
   border-bottom: 1px dotted #ee3643;
   text-align: center;
+}
+
+.sorting-item:nth-of-type(2) a {
+  margin-left: 6px;
 }
 
 .sorting-item a:hover {
@@ -1130,22 +1140,23 @@ h1 {
   font-size: 0;
 }
 
-.direction a::before {
+.sorting-direction a::before {
   content: "";
   background-image: url(..//img/icon-down.svg);
   height: 10px;
   width: 11px;
   position: absolute;
-  right: 20px;
-  top: 10px;
+  top: 15px;
   opacity: 0.3;
-  padding-right: 17px;
-  padding-left: 4px;
   background-repeat: no-repeat;
 }
 
+.sorting-direction .down a::before {
+  right: 17px;
+}
+
 .sorting-direction .up a::before {
-  right: 10px;
+  right: 49px;
   transform: rotate(180deg);
 }
 
@@ -1163,14 +1174,14 @@ h1 {
 .filter {
   display: flex;
   flex-direction: column;
-  width: 220px;
+  min-width: 220px;
 }
 
 .filter h3 {
   background-color: #f7f3ec;
   vertical-align: middle;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding: 10px 20px;
+  margin: 0;
 }
 
 .filter-form {
@@ -1240,55 +1251,79 @@ h1 {
 /* ______Много текста О перфах______ */
 
 .tool .container {
-  padding: 61px 0 68px 0;
+  padding-top: 68px;
 }
 
 .tool {
   background-color: #f4f7f9;
   display: flex;
+  padding-bottom: 58px;
 }
 
-.tool-heading {
+.container .tool-heading {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
   margin-top: 0px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
+  letter-spacing: 0.2px;
 }
 
 .tool-description {
-  margin: 0;
-  letter-spacing: -0.3px;
+  letter-spacing: 0.1px;
 }
 
 
 /*________ФУТЕР____________________ */
 
+.footer-logo {
+  width: 138px;
+  height: 63px;
+  background-color: #ee3643;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  text-align: center;
+  padding: 0 41px;
+}
+
+.footer-logo img {
+  padding-top: 18px;
+}
+
+.footer-logo::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 220px;
+  height: 5px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
 .feedback {
   background-color: #293449;
   display: flex;
-}
-
-.block-main-nav,
-.block-assortment {
-  background-color: #32425c;
-  display: flex;
+  padding-bottom: 22px;
 }
 
 .block-main-nav .container,
 .block-assortment .container {
   display: flex;
   flex-wrap: wrap;
+  background-color: #32425c;
+  justify-content: space-between;
 }
 
 .nav-assortments {
   display: flex;
-  flex-wrap: wrap;
   width: 60%;
-  justify-content: space-around;
+  justify-content: flex-end;
   margin-right: 0;
+  margin-top: 20px;
 }
 
 .container .nav-section,
@@ -1297,19 +1332,16 @@ h1 {
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0;
 }
 
-.block-main-nav {
+.block-main-nav,
+.block-assortment {
   justify-content: space-between;
+  background-color: #32425c;
 }
 
-.nav-sections {
-  display: flex;
-  padding-left: 30x;
-  padding-right: 30px;
+.block-assortment {
+  padding-bottom: 51px;
 }
 
 .nav-assortments a,
@@ -1318,7 +1350,24 @@ h1 {
   color: #ffd180;
 }
 
-.nav-section:hover,
+.nav-sections {
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 0;
+  margin-top: 36px;
+}
+
+ul .nav-section {
+  margin-left: 59px;
+}
+
+.nav-assortment {
+  display: block;
+  padding-right: 0;
+  padding-left: 59px;
+}
+
+.nav-assortment .nav-section:hover,
 .nav-assortment:hover {
   text-decoration: underline;
 }
@@ -1333,6 +1382,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 0;
+  padding-top: 36px;
+  margin: 0;
+  padding-right: 9px;
 }
 
 .feedback-mail:hover,
@@ -1354,12 +1406,23 @@ h1 {
   color: #ffffff;
 }
 
+.feedback .mail {
+  margin-left: auto;
+  margin-right: 56px;
+}
+
 .contact-info {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
   color: #ffffff;
+  margin-top: 19px;
+  margin-left: 3px;
+}
+
+.contact-info a {
+  letter-spacing: 0.4px;
 }
 
 
@@ -1367,7 +1430,11 @@ h1 {
 
 .social-button-block {
   display: flex;
-  min-width: 100px;
+  justify-content: space-between;
+  min-width: 132px;
+  position: relative;
+  top: -8px;
+  left: 120px;
 }
 
 .social-button {
@@ -1404,6 +1471,13 @@ h1 {
 .social-button:focus {
   text-decoration: none;
   background-color: #ee3643;
+}
+
+.feedback-mail,
+.feedback-site {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 
@@ -1457,31 +1531,10 @@ h1 {
   justify-content: space-between;
 }
 
-
-/* display: flex;
-    justify-content: space-between;
-    padding-left: 0; */
-
-
-/* .popular-production {
-  display: block;
-} */
-
-
-/* .popular-production {
-  display: flex;
-}
-
-.popular-production {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-} */
-
 .production {
   position: relative;
   display: inline-block;
-  width: 218px;
+  width: 31%;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 20px;
@@ -1494,8 +1547,22 @@ h1 {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
-.production .production-list-catalog {
-  margin-right: 0;
+.production-list-catalog {
+  margin-left: 20px;
+}
+
+.production-list-catalog .production {
+  margin-right: 20px;
+}
+
+.production-list-catalog .production:nth-of-type(3n) {
+  margin-right: 0px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog {
@@ -1532,7 +1599,7 @@ h1 {
 }
 
 .production .production-name {
-  width: 218px;
+  width: 217px;
   height: 168px;
 }
 
@@ -1560,18 +1627,23 @@ h1 {
   min-height: 40px;
   padding: 0 25px;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .production .old-price {
-  min-height: 20px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  color: #999;
-  text-decoration: line-through;
+  font-family: "PTSans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
+  height: 28px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  color: #999;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 5px;
+  letter-spacing: 0.1;
 }
 
 .production .new-price {
@@ -1580,10 +1652,11 @@ h1 {
   line-height: 18px;
   font-weight: bold;
   position: relative;
+  text-align: center;
   width: 80px;
-  margin: 10px auto;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  margin-left: 42px;
+  padding: 10px 27px;
   color: #ffffff;
   background: #ee3643;
   border-top-left-radius: 2px;
@@ -1594,10 +1667,10 @@ h1 {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -25px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1686,8 +1759,7 @@ h1 {
   justify-content: space-between;
   width: 285px;
   padding: 7px 0px;
-  margin: 0;
-  margin-top: 56px;
+  margin-top: 31px;
   margin-bottom: 60px;
   list-style: none;
 }
@@ -1695,9 +1767,8 @@ h1 {
 .paginaction-item a {
   text-align: center;
   border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  padding: 11px 15px;
-  margin-right: 10px;
+  border-radius: 2px;
+  padding: 10px 15px;
 }
 
 .paginaction-item:last-of-type a {
@@ -1716,21 +1787,6 @@ h1 {
 .paginaction-list .active a {
   background-color: #ee3643;
 }
-
-
-/* .old-price {
-    text-transform: uppercase;
-    font-family: "PTSans", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: bold;
-    text-decoration: line-through;
-    color: #999999;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    text-align: center;
-  }
-  */
 
 .popular-manufacturer h2,
 .popular-production h2 {
